@@ -2,9 +2,16 @@
 module.exports = {
   content: [
     './posts/templates/*.html',
+    './home/templates/*.html',
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('daisyui')
+  ],
+  daisyui: {
+    themes: ["pastel"],
+  },
+
 };
